@@ -1,0 +1,4 @@
+node_modules/.bin/eslint test/test.js
+node_modules/.bin/eslint test/test.js
+node_modules/.bin/eslint test/test.js
+node_modules/.bin/eslint test/test.js
