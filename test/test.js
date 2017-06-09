@@ -1,6 +1,6 @@
-const ttiLandingPage = require('../pages/ttiLandPage.js');
+const ttiLandingPage = require('../pageobjects/ttiLandingPage.js');
 
-describe('page is loaded', function(){
+describe('landing page is loaded', function(){
 
     it('links should be visible', function(){
         browser.url('/');

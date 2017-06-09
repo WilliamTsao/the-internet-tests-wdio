@@ -3,6 +3,7 @@
     "env": {
         "webdriverio/wdio": true,
         "browser": true,
+        "node": true,
         "mocha": true,
         "amd": true,
         "es6": true
@@ -28,7 +29,8 @@
         "prefer-const": ["error", {
             "destructuring": "any",
             "ignoreReadBeforeAssign": false
-        }]
+        }],
+        "no-console": "off"
 
     }
 }

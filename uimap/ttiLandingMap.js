@@ -1,4 +1,4 @@
-class ttiLandingMap {
+const ttiLandingMap = {
     links(){
         return {
             ABTesting: '#content > ul > li:nth-child(1) > a',
@@ -11,18 +11,16 @@ class ttiLandingMap {
             DragandDrop: '#content > ul > li:nth-child(8) > a',
             Dropdown: '#content > ul > li:nth-child(9) > a',
             DynamicContent: '#content > ul > li:nth-child(10)  > a'
-            //SomethingNotThere: '#content > ul > li:nth-child(50) > a'
+            //,SomethingNotThere: '#content > ul > li:nth-child(50) > a'
         };
-    }
-
+    },
     headings(){
         return{
             welcome: '.heading',
             exampleHeading: '#content > h2'
         };
-    }
-
+    },
     isLoaded(){return Object.assign(this.links(), this.headings());}
-}
+};
 
 module.exports = ttiLandingMap;
