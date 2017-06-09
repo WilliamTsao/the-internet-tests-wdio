@@ -1,0 +1,20 @@
+{
+  "name": "the-internet-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "wdio"
+  },
+  "dependencies": {
+    "chai": "^4.0.2",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-webdriverio": "^1.0.1",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "wdio-spec-reporter": "^0.1.0"
+  }
+}
