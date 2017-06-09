@@ -9,7 +9,7 @@ describe('page is loaded', function(){
     it('headings should be visible', function(){
         for(const key in homepageMap.headings){
             isLoaded(homepageMap.headings[key]).should.be.true;
-        };
+        };;
     });
 });
 
