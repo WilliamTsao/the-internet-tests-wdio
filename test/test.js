@@ -2,9 +2,14 @@ const ttiLandingPage = require('../pageobjects/ttiLandingPage.js');
 
 describe('landing page is loaded', function(){
 
-    it('links should be visible', function(){
+    before(function() {
+        // runs before all tests in this block
         browser.url('/');
         ttiLandingPage.isLoaded().should.be.true;
+    });
+
+    it('some other tests', function(){
+        
     });
 });
 
