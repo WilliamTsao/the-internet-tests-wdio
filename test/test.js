@@ -1,15 +1,18 @@
-const ttiLandingPage = require('../pageobjects/ttiLandingPage.js');
+const LoginPage = require('../pageobjects/LoginPage.js');
+describe('Login', function(){
 
-describe('landing page is loaded', function(){
-
-    before(function() {
+    beforeEach(function() {
         // runs before all tests in this block
-        browser.url('/');
-        ttiLandingPage.isLoaded().should.be.true;
+        LoginPage.open();
+        LoginPage.isLoaded().should.be.true;
     });
 
-    it('some other tests', function(){
-        
+    it('valid login', function(){
+        LoginPage.validLogin().should.be.equal('https://www.photoshelter.com/mem/home/index');
     });
+
+    it('invalid login', function(){
+        LoginPage.invalidLogin().should.be.equal('https://www.photoshelter.com/login');
+    });
+
 });
-
